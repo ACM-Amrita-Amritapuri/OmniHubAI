@@ -29,12 +29,10 @@ Welcome to **OmniHubAI** – Your Ultimate AI Library!
 To install the library, clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/<your_github_username>/OmniHubAI.git
+git clone https://github.com/ACM-Amrita-Amritapuri/OmniHubAI.git
 cd OmniHubAI
 pip install -r requirements.txt
 ```
-
-Replace `<your_github_username>` with your GitHub username.
 
 ## Usage
 
@@ -102,8 +100,6 @@ Chatbot response to: Hello, how are you?
 
 ## Directory Structure
 
-Here is the proposed directory structure for the **OmniHubAI** library:
-
 ```
 OmniHubAI/
 ├── .gitignore
@@ -154,7 +150,7 @@ We welcome contributions from developers around the globe! To contribute, please
 1. **Fork the Repository**: Click the "Fork" button on the top right of this page.
 2. **Clone the Repository**:
    ```bash
-   git clone https://github.com/<your_github_username>/OmniHubAI.git
+   git clone https://github.com/ACM-Amrita-Amritapuri/OmniHubAI.git
    ```
 3. **Create a Branch**:
    ```bash
@@ -183,4 +179,4 @@ This project is licensed under the MIT License – see the LICENSE file for more
 
 ---
 
-Thank you for checking out **OmniHubAI**! We hope you find this library useful for your AI projects.
+Thank you for checking out **OmniHubAI**! We hope this library is useful for your AI projects.
