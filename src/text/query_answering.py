@@ -1,3 +1,5 @@
+from gemini import Gemini
+
 class QueryAnswering:
     def __init__(self):
         # Initialization code
