@@ -21,7 +21,7 @@ class QueryAnswering:
 
 class CodeGeneration:
     def __init__(self):
-        API_KEY = "AIzaSyDQ5MEv3oUkEzGbNL56VYaXP4YmIPV9qQI"
+        API_KEY = "api-key-placeholder-to-avoid-checks"
         MODEL_ID = "gemini-1.5-flash"
         system_instruction = """You are an expert programmer assistant. 
         Generate clean, efficient, and well-documented code based on user requirements.
