@@ -4,8 +4,8 @@ from .gemini import Gemini
 class QueryAnswering:
 
     def __init__(self):
-        API_KEY = ""
-        MODEL_ID = "gemini-1.5-flash"
+        API_KEY = "place_holder for API_KEY"
+        MODEL_ID = "place_holder for Model_ID"
         system_instruction = "You are a helpful assistant hanf big texts and paragraphs."
         self.gemini = Gemini(API_KEY, MODEL_ID, system_instruction)
     
