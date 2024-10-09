@@ -1,1 +1,1 @@
-gemini==X.Y.Z
+gemini
