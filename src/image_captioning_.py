@@ -1,4 +1,4 @@
-from hugging_face_inference import HuggingFaceInference
+from hugging_face import HuggingFaceInference
 
 def image_captioning(filename):
     api_token = "Your_API_Key"
