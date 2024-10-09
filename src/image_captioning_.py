@@ -1,7 +1,7 @@
 from hugging_face_inference import HuggingFaceInference
 
 def image_captioning(filename):
-    api_token = "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"
+    api_token = "Your_API_Key"
     model_name = "nlpconnect/vit-gpt2-image-captioning"
     
     inference_client = HuggingFaceInference(api_token, model_name)
@@ -17,6 +17,3 @@ def image_captioning(filename):
     output = inference_client.inference(inputs)
     return output
 
-# Example usage
-output = image_captioning(r"d:/work space/Club october/cat.jpeg")
-print(output)
