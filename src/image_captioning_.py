@@ -2,7 +2,7 @@ from hugging_face import HuggingFaceInference
 
 def image_captioning(filename):
     api_token = "Your_API_Key"
-    model_name = "nlpconnect/vit-gpt2-image-captioning"
+    model_name = "model_name"
     
     inference_client = HuggingFaceInference(api_token, model_name)
 
