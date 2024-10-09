@@ -1,4 +1,4 @@
-from .gemini import Gemini
+from gemini import Gemini
 
 
 class QueryAnswering:
