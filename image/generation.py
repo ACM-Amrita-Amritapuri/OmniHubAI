@@ -1,0 +1,2 @@
+def colorize():
+    pass
