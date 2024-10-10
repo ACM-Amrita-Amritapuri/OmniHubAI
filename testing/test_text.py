@@ -1,6 +1,6 @@
 # testing/text_test.py
 
-from src.text import QueryAnswering
+from src.text.text import QueryAnswering
 
 def test_query_answering():
     qa = QueryAnswering()
