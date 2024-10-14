@@ -1,8 +1,11 @@
-
+from assistants.gemini import Gemini
 
 class TextAnalysis :
     def __init__(self):
-        pass
+        API_KEY = "AIzaSyDQ5MEv3oUkEzGbNL56VYaXP4YmIPV9qQI"
+        MODEL_ID = "gemini-1.5-flash"
+        system_instruction = "You are a helpful assistant to handle big texts and paragraphs."
+        self.gemini = Gemini(API_KEY, MODEL_ID, system_instruction)
 
     def summarize(self, text):
         pass
@@ -23,6 +26,6 @@ class TextAnalysis :
         # from X lang to english
         pass
 
-    def text_correction(self):
+    def text_correction(self,text):
         pass
 
