@@ -2,7 +2,7 @@ from assistants.gemini import Gemini
 
 class TextAnalysis :
     def __init__(self):
-        API_KEY = "AIzaSyBMkJr0zdkjz5Sd6JGZSbKqga9xLzROKTQ"
+        API_KEY = "your_api_key"
         MODEL_ID = "gemini-1.5-flash"
         system_instruction = "You are a helpful assistant to handle big texts and paragraphs."
         self.gemini = Gemini(API_KEY, MODEL_ID, system_instruction)
