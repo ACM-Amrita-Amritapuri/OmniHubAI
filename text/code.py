@@ -2,7 +2,7 @@ from assistants.gemini import Gemini
 
 class CodeHandling:
     def __init__(self):
-        API_KEY = "api-key-placeholder-to-avoid-checks"
+        API_KEY = "AIzaSyC6eX-6nIWYCFFwQjfI_Dx20nQRZINnlBI"
         MODEL_ID = "gemini-1.5-flash"
         system_instruction = """You are an expert programmer assistant. 
         Generate clean, efficient, and well-documented code based on user requirements.
@@ -32,21 +32,23 @@ class CodeHandling:
         prompt = f"Add comprehensive docstrings to the following code:\n{code}"
         return self.gemini.get_gemini_responses_text(prompt)
     
-    def generate_markdown_documentation(self, code, project_name=None):
-        prompt = f"""Generate comprehensive markdown documentation for this code:
-        {code}
-        
-        Include:
-        1. Overview
-        2. Installation instructions
-        3. Usage examples
-        4. API documentation for each function/class
-        5. Any dependencies
-        6. Contributing guidelines
-        """
-        if project_name:
-            prompt = f"Project Name: {project_name}\n\n" + prompt
-        return self.gemini.get_gemini_responses_text(prompt)
+    
+    def code_documentation(self, code):
+        system_instruction =  "Summarize the following code in one best short sentence."
+
+        try:
+            response = self.gemini.get_gemini_responses_text(code)
+            
+            # Extracting the content from the response
+            if response.candidates:
+                documentation_text = response.candidates[0].content.parts[0].text
+                return documentation_text.strip()
+            else:
+                return "No valid response received."
+        except Exception as e:
+            return f"An error occurred: {e}"
+
+
     
     def optimize_code(self, code, optimization_goal):
         prompt = f"""Optimize this code for {optimization_goal}:
